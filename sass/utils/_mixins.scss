@@ -1,0 +1,12 @@
+@mixin flex() {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin font($fs, $lh, $ls, $color: inherit) {
+  font-size: $fs;
+  line-height: $lh;
+  letter-spacing: $ls;
+  color: $color;
+}

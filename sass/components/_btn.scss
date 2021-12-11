@@ -1,0 +1,17 @@
+.btn {
+  font-weight: 700;
+  @include font(16px, 1.87, 0.06em, getColor("second-btn-text-color"));
+  text-align: center;
+  display: block;
+  background-color: getColor("btn-bg-color");
+  box-shadow: $box-shadow-btn;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  transition: box-shadow $transition-duration $timing-function,
+    background-color $transition-duration $timing-function;
+  &:hover {
+    background-color: getColor("accent-btn-bg-color");
+    box-shadow: $accent-box-shadow-btn;
+  }
+}

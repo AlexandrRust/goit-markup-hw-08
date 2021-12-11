@@ -1,0 +1,32 @@
+.peculiarities-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -30px;
+  margin-bottom: -30px;
+}
+
+.peculiarities-card {
+  flex-basis: calc(100% / 4 - 30px);
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+
+.peculiarities-card__box {
+  background-color: #f5f4fa;
+  width: 270px;
+  height: 120px;
+  @include flex();
+  margin-bottom: 30px;
+}
+
+.peculiarities-card__title {
+  font-weight: 700;
+  @include font(14px, 1.14, 0.03em, getColor("title-color"));
+  text-transform: uppercase;
+}
+.peculiarities-card__text {
+  @include font(14px, 1.71, 0.03em, getColor("text-color"));
+  width: 270px;
+  height: 75px;
+  margin-top: 10px;
+}

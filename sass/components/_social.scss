@@ -1,0 +1,9 @@
+.social__link {
+  @include flex();
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  color: getColor("icon-color");
+  transition: background-color $transition-duration $timing-function,
+    color $transition-duration $timing-function;
+}
