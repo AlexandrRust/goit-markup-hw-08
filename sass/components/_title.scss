@@ -1,5 +1,6 @@
 .title {
   font-weight: 700;
-  @include font(36px, 1.16, 0.03em, getColor("title-color"));
+  @include font(28px, 1.78, 0.03em, getColor("title-color"));
+  // @include font(36px, 1.16, 0.03em, getColor("title-color"));
   text-align: center;
 }

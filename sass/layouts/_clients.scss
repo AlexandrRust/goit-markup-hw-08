@@ -1,22 +1,32 @@
 .clients-section__title {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+  }
 }
 
 .clients {
   display: flex;
+  flex-wrap: wrap;
   margin-right: -30px;
   margin-bottom: -30px;
 }
 
 .clients__item {
-  flex-basis: calc(100% / 6 - 30px);
+  height: 92px;
+  flex-basis: calc(100% / 2 - 30px);
   margin-right: 30px;
   margin-bottom: 30px;
+  @media screen and (min-width: 768px) {
+    flex-basis: calc(100% / 3 - 30px);
+  }
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc(100% / 6 - 30px);
+  }
 }
 
 .clients__link {
-  width: 170px;
-  height: 92px;
+  width: 100%;
   border: 1px solid #afb1b8;
   border-radius: 5px;
   @include flex();

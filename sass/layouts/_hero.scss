@@ -8,20 +8,31 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  &-container {
-    padding: 200px;
+  padding: 118px 0;
+  @media screen and (min-width: 1200px) {
+    padding: 200px 0;
   }
+  &-container {
+    margin: 0 auto;
+    max-width: 360px;
+    @media screen and (min-width: 1200px) {
+      max-width: 696px;
+    }
+  }
+
   &__title {
     font-weight: 900;
-    @include font(44px, 1.36, 0.06em, #ffffff);
+    @include font(26px, 1.61, 0.06em, #ffffff);
     text-transform: uppercase;
-    max-width: 696px;
-    margin: 0 auto;
     margin-bottom: 30px;
     text-align: center;
+    @media screen and (min-width: 1200px) {
+      @include font(44px, 1.36, 0.06em, #ffffff);
+    }
   }
   &__btn {
     margin: 0 auto;
     padding: 10px 32px;
+    display: block;
   }
 }

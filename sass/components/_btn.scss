@@ -1,8 +1,7 @@
 .btn {
   font-weight: 700;
-  @include font(16px, 1.87, 0.06em, getColor("second-btn-text-color"));
+  @include font(16px, 1.875, 0.06em, getColor("second-btn-text-color"));
   text-align: center;
-  display: block;
   background-color: getColor("btn-bg-color");
   box-shadow: $box-shadow-btn;
   cursor: pointer;
