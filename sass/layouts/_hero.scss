@@ -1,4 +1,7 @@
 .hero {
+  width: 100%;
+  margin: 0 auto;
+  box-sizing: border-box;
   background: #2f303a;
   background-image: linear-gradient(
       rgba(47, 48, 58, 0.4),
@@ -13,8 +16,11 @@
     padding: 200px 0;
   }
   &-container {
+    width: 100%;
     margin: 0 auto;
-    max-width: 360px;
+    @media screen and (min-width: 480px) {
+      max-width: 360px;
+    }
     @media screen and (min-width: 1200px) {
       max-width: 696px;
     }

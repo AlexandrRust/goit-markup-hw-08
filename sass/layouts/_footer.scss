@@ -22,12 +22,9 @@
 .footer-left-thumb {
   text-align: center;
   margin-bottom: 60px;
-  @media screen and (min-width: 768px) {
-    margin-right: 165px;
-  }
+
   @media screen and (min-width: 1200px) {
     text-align: left;
-    margin-right: 70px;
   }
 }
 
@@ -48,8 +45,12 @@ address {
   padding-top: 12px;
   margin-bottom: 60px;
   text-align: center;
+  @media screen and (min-width: 768px) {
+    margin-left: 165px;
+  }
   @media screen and (min-width: 1200px) {
     text-align: left;
+    margin-left: 70px;
   }
 }
 
@@ -65,8 +66,8 @@ address {
   justify-content: center;
 }
 
-.center-thumb__item:not(:last-child) {
-  margin-right: 10px;
+.center-thumb__item:not(:first-child) {
+  margin-left: 10px;
 }
 
 .center-thumb__link {
@@ -82,25 +83,24 @@ address {
 }
 
 .rith-thumb {
+  width: 100%;
+  margin: 0 auto;
   text-align: center;
+  @media screen and (min-width: 768px) {
+    max-width: 450px;
+  }
   @media screen and (min-width: 1200px) {
+    max-width: 570px;
+    margin: 0;
     margin-left: 93px;
     padding-top: 12px;
     text-align: left;
   }
 }
 .footer-form-thumb {
-  @media screen and (min-width: 480px) {
-    margin: 0 auto;
-  }
   @media screen and (min-width: 1200px) {
-    @include flex();
-  }
-}
-
-.footer-form {
-  @media screen and (min-width: 1200px) {
-    margin-right: 12px;
+    display: flex;
+    width: 100%;
   }
 }
 
@@ -126,6 +126,7 @@ address {
   align-items: center;
   @media screen and (min-width: 1200px) {
     margin-top: 0;
+    margin-left: 12px;
   }
 }
 

@@ -1,7 +1,11 @@
 .logo {
   font-family: Raleway;
   font-weight: 700;
-  @include font(26px, 1.19, 0.03em);
+  @include font(24px, 1.66, 0.03em);
+  @media screen and (min-width: 1200px) {
+    @include font(26px, 1.19, 0.03em);
+  }
+
   &--blue {
     color: getColor("first-logo-color");
   }
