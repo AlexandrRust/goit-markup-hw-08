@@ -52,45 +52,49 @@
             </ul>
         </div>
         <div class="mob-menu is-hidden">
-            <button type="button" class="close-menu">
-                <svg class="close-menu__icon" width="40" height="40">
-                    <use href="./images/icons.svg#icon-close-black"></use>
-                </svg>
-            </button>
-            <ul class="mob-list">
-                <li class="mob-item">
-                    <a href="./index.html" class="mob__link link">Студия</a>
-                </li>
-                <li class="mob-item">
-                    <a href="./portfolio.html" class="mob__link link">Портфолио</a>
-                </li>
-                <li class="mob-item">
-                    <a href="" class="mob__link link">Контакты</a>
-                </li>
-            </ul>
-            <div class="mob-menu-bottom">
-                <ul class="mob-menu-contact">
-                    <li class="mob-menu-contact__item">
-                        <a href="tel:+380961111111" class="mob-menu-contact__link--big link">+38 096 111 11 11</a>
-                    </li>
-                    <li class="mob-menu-contact__item">
-                        <a href="mailto:info@devstudio.com" class="mob-menu-contact__link link">info@devstudio.com</a>
-                    </li>
-                </ul>
-                <ul class="mob-menu-social">
-                    <li class="mob-menu-social__item">
-                        <a href="" class="mob-menu-social__link link">Instagram</a>
-                    </li>
-                    <li class="mob-menu-social__item">
-                        <a href="" class="mob-menu-social__link link">Twitter</a>
-                    </li>
-                    <li class="mob-menu-social__item">
-                        <a href="" class="mob-menu-social__link link">Facebook</a>
-                    </li>
-                    <li class="mob-menu-social__item">
-                        <a href="" class="mob-menu-social__link link">LinkedIn</a>
-                    </li>
-                </ul>
+            <div class="mob-menu-container">
+                <div class="mob-menu-top">
+                    <button type="button" class="close-menu">
+                        <svg class="close-menu__icon" width="40" height="40">
+                            <use href="./images/icons.svg#icon-close-black"></use>
+                        </svg>
+                    </button>
+                    <ul class="mob-list">
+                        <li class="mob-item">
+                            <a href="./index.html" class="mob__link link">Студия</a>
+                        </li>
+                        <li class="mob-item">
+                            <a href="./portfolio.html" class="mob__link link mob__link--current">Портфолио</a>
+                        </li>
+                        <li class="mob-item">
+                            <a href="" class="mob__link link">Контакты</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="mob-menu-bottom">
+                    <ul class="mob-menu-contact">
+                        <li class="mob-menu-contact__item">
+                            <a href="tel:+380961111111" class="mob-menu-contact__link--big link">+38 096 111 11 11</a>
+                        </li>
+                        <li class="mob-menu-contact__item">
+                            <a href="mailto:info@devstudio.com" class="mob-menu-contact__link link">info@devstudio.com</a>
+                        </li>
+                    </ul>
+                    <ul class="mob-menu-social">
+                        <li class="mob-menu-social__item">
+                            <a href="" class="mob-menu-social__link link">Instagram</a>
+                        </li>
+                        <li class="mob-menu-social__item">
+                            <a href="" class="mob-menu-social__link link">Twitter</a>
+                        </li>
+                        <li class="mob-menu-social__item">
+                            <a href="" class="mob-menu-social__link link">Facebook</a>
+                        </li>
+                        <li class="mob-menu-social__item">
+                            <a href="" class="mob-menu-social__link link">LinkedIn</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
     </header>
@@ -100,29 +104,31 @@
         <section class="portfolio section">
             <h2 class="visually-hidden">Наши роботы</h2>
             <!--BTNFILTER-->
-            <ul class="portfolio-filter list">
-                <li class="portfolio-filter__item">
-                    <button class="portfolio-filter__btn" type="button">Все</button>
-                </li>
-                <li class="portfolio-filter__item">
-                    <button class="portfolio-filter__btn" type="button">Веб-сайты</button>
-                </li>
-                <li class="portfolio-filter__item">
-                    <button class="portfolio-filter__btn" type="button">Приложения</button>
-                </li>
-                <li class="portfolio-filter__item">
-                    <button class="portfolio-filter__btn" type="button">Дизайн</button>
-                </li>
-                <li class="portfolio-filter__item">
-                    <button class="portfolio-filter__btn" type="button">Маркетинг</button>
-                </li>
-            </ul>
+            <div class="container">
+                <ul class="portfolio-filter list">
+                    <li class="portfolio-filter__item">
+                        <button class="portfolio-filter__btn" type="button">Все</button>
+                    </li>
+                    <li class="portfolio-filter__item">
+                        <button class="portfolio-filter__btn" type="button">Веб-сайты</button>
+                    </li>
+                    <li class="portfolio-filter__item">
+                        <button class="portfolio-filter__btn" type="button">Приложения</button>
+                    </li>
+                    <li class="portfolio-filter__item">
+                        <button class="portfolio-filter__btn" type="button">Дизайн</button>
+                    </li>
+                    <li class="portfolio-filter__item">
+                        <button class="portfolio-filter__btn" type="button">Маркетинг</button>
+                    </li>
+                </ul>
+            </div>
             <!--WORKLIST-->
             <div class="container">
                 <ul class="portfolio-worklist list ">
                     <li class="worklist-item">
                         <div class="worklist-thumb">
-                            <img class="worklist__img" src="./images/portfolio/portfolio-img1.jpg" alt="Ноутбук" width="370" height="294">
+                            <img class="worklist__img" srcset="./images/portfolio/portfolio-img1.jpg 1x, ./images/portfolio/portfolio-img1-2x.jpg 2x" src="./images/portfolio/portfolio-img1.jpg" alt="Ноутбук" width="370" height="294">
                             <div class="worklist-overlay">
                                 <p class="worklist-overlay__text">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового
                                 шпионажа и атак на защищённые сервера конкурентов.</p>
@@ -135,7 +141,7 @@
                     </li>
                     <li class="worklist-item">
                         <div class="worklist-thumb">
-                            <img class="worklist__img" src="./images/portfolio/portfolio-img2.jpg" alt="Ноутбук" width="370" height="294">
+                            <img class="worklist__img" srcset="./images/portfolio/portfolio-img2.jpg 1x, ./images/portfolio/portfolio-img2-2x.jpg 2x" src="./images/portfolio/portfolio-img2.jpg" alt="Ноутбук" width="370" height="294">
                             <div class="worklist-overlay">
                                 <p class="worklist-overlay__text">Технокряк это современная площадка распространения коронавируса. Компании
                                     используют эту платформу для цифрового
@@ -149,7 +155,7 @@
                     </li>
                     <li class="worklist-item">
                         <div class="worklist-thumb">
-                            <img class="worklist__img" src="./images/portfolio/portfolio-img3.jpg" alt="Ноутбук" width="370" height="294">
+                            <img class="worklist__img" srcset="./images/portfolio/portfolio-img3.jpg 1x, ./images/portfolio/portfolio-img3-2x.jpg 2x" src="./images/portfolio/portfolio-img3.jpg" alt="Ноутбук" width="370" height="294">
                             <div class="worklist-overlay">
                                 <p class="worklist-overlay__text">Технокряк это современная площадка распространения коронавируса. Компании
                                     используют эту платформу для цифрового
@@ -163,7 +169,7 @@
                     </li>
                     <li class="worklist-item">
                         <div class="worklist-thumb">
-                            <img class="worklist__img" src="./images/portfolio/portfolio-img4.jpg" alt="Ноутбук" width="370" height="294">
+                            <img class="worklist__img" srcset="./images/portfolio/portfolio-img4.jpg 1x, ./images/portfolio/portfolio-img4-2x.jpg 2x" src="./images/portfolio/portfolio-img4.jpg" alt="Ноутбук" width="370" height="294">
                             <div class="worklist-overlay">
                                 <p class="worklist-overlay__text">Технокряк это современная площадка распространения коронавируса. Компании
                                     используют эту платформу для цифрового
@@ -177,7 +183,7 @@
                     </li>
                     <li class="worklist-item">
                         <div class="worklist-thumb">
-                            <img class="worklist__img" src="./images/portfolio/portfolio-img5.jpg" alt="Ноутбук" width="370" height="294">
+                            <img class="worklist__img" srcset="./images/portfolio/portfolio-img5.jpg 1x, ./images/portfolio/portfolio-img5-2x.jpg 2x" src="./images/portfolio/portfolio-img5.jpg" alt="Ноутбук" width="370" height="294">
                             <div class="worklist-overlay">
                                 <p class="worklist-overlay__text">Технокряк это современная площадка распространения коронавируса. Компании
                                     используют эту платформу для цифрового
@@ -191,7 +197,7 @@
                     </li>
                     <li class="worklist-item">
                         <div class="worklist-thumb">
-                            <img class="worklist__img" src="./images/portfolio/portfolio-img6.jpg" alt="Ноутбук" width="370" height="294">
+                            <img class="worklist__img" srcset="./images/portfolio/portfolio-img6.jpg 1x, ./images/portfolio/portfolio-img6-2x.jpg 2x" src="./images/portfolio/portfolio-img6.jpg" alt="Ноутбук" width="370" height="294">
                             <div class="worklist-overlay">
                                 <p class="worklist-overlay__text">Технокряк это современная площадка распространения коронавируса. Компании
                                     используют эту платформу для цифрового
@@ -205,7 +211,7 @@
                     </li>
                     <li class="worklist-item">
                         <div class="worklist-thumb">
-                            <img class="worklist__img" src="./images/portfolio/portfolio-img7.jpg" alt="Ноутбук" width="370" height="294">
+                            <img class="worklist__img" srcset="./images/portfolio/portfolio-img7.jpg 1x, ./images/portfolio/portfolio-img7-2x.jpg 2x" src="./images/portfolio/portfolio-img7.jpg" alt="Ноутбук" width="370" height="294">
                             <div class="worklist-overlay">
                                 <p class="worklist-overlay__text">Технокряк это современная площадка распространения коронавируса. Компании
                                     используют эту платформу для цифрового
@@ -219,7 +225,7 @@
                     </li>
                     <li class="worklist-item">
                         <div class="worklist-thumb">
-                            <img class="worklist__img" src="./images/portfolio/portfolio-img8.jpg" alt="Ноутбук" width="370" height="294">
+                            <img class="worklist__img" srcset="./images/portfolio/portfolio-img8.jpg 1x, ./images/portfolio/portfolio-img8-2x.jpg 2x" src="./images/portfolio/portfolio-img8.jpg" alt="Ноутбук" width="370" height="294">
                             <div class="worklist-overlay">
                                 <p class="worklist-overlay__text">Технокряк это современная площадка распространения коронавируса. Компании
                                     используют эту платформу для цифрового
@@ -233,7 +239,7 @@
                     </li>
                     <li class="worklist-item">
                         <div class="worklist-thumb">
-                            <img class="worklist__img" src="./images/portfolio/portfolio-img9.jpg" alt="Ноутбук" width="370" height="294">
+                            <img class="worklist__img" srcset="./images/portfolio/portfolio-img9.jpg 1x, ./images/portfolio/portfolio-img9-2x.jpg 2x" src="./images/portfolio/portfolio-img9.jpg" alt="Ноутбук" width="370" height="294">
                             <div class="worklist-overlay">
                                 <p class="worklist-overlay__text">Технокряк это современная площадка распространения коронавируса. Компании
                                     используют эту платформу для цифрового

@@ -39,6 +39,5 @@
 }
 .peculiarities-card__text {
   @include font(14px, 1.71, 0.03em, getColor("text-color"));
-  height: 75px;
   margin-top: 10px;
 }
